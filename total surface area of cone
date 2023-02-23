@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+#define PI 3.14159
+
+int main(){
+    float radius, height, surfaceArea;
+    
+    printf("Enter base radius and height of a Cone\n");
+    scanf("%f %f", &radius, &height);
+
+    surfaceArea = 
+        PI*radius*(radius + sqrt(height*height + radius*radius));
+        
+    printf("Total surface area of Cone : %0.4f\n",
+        surfaceArea);
+    
+    return 0;
+}
